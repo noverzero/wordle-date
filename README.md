@@ -40,8 +40,8 @@ A number representing the elapsed time between the target moment and the referen
 ## Example
 javascript
 Copy code
-const referenceMoment = '2023-01-01T00:00:00Z';
-const targetMoment = '2022-12-25T00:00:00Z';
+const referenceMoment = '0000-01-01T00:00:00Z';
+const targetMoment = '2022-06-18T00:00:00Z';
 const outputUnit = 'hours';
 
 const hours = wordleDate.calculate(referenceMoment, targetMoment, outputUnit);
