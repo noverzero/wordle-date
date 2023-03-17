@@ -11,8 +11,6 @@ npm install wordle-date
 
 ## Usage
 
-javascript
-Copy code
 const wordleDate = require('wordle-date');
 
 // Set your reference moment
@@ -38,8 +36,7 @@ Returns:
 A number representing the elapsed time between the target moment and the reference moment, in the specified output unit.
 
 ## Example
-javascript
-Copy code
+
 const referenceMoment = '0000-01-01T00:00:00Z';
 const targetMoment = '2022-06-18T00:00:00Z';
 const outputUnit = 'hours';

@@ -2,7 +2,7 @@ function parseDate(date) {
     return typeof date === 'string' ? new Date(date) : new Date(date.valueOf());
   }
   
-  function calculate(referenceMoment, targetMoment, outputUnit = 'days') {
+  function calculate(referenceMoment, targetMoment = '2021-06-19T00:00:00Z', outputUnit = 'days') {
     const ref = parseDate(referenceMoment);
     const target = parseDate(targetMoment);
   
@@ -36,7 +36,7 @@ function parseDate(date) {
   module.exports = {
     calculate,
   };
-  
+
 
 
   
