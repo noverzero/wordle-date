@@ -9,7 +9,7 @@ function parseDate(date) {
 
     const elapsed = (target - ref) / (1000 * 60 * 60 * 24);
   
-    return elapsed * unitMultiplier;
+    return elapsed;
   }
   
   function calculate(referenceMoment = '2021-06-19T00:00:00Z', targetMoment = new Date().toISOString().split('T')[0], outputUnit = 'days') {
