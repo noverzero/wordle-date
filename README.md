@@ -1,10 +1,17 @@
 # wordle-date
 
-Convert any date to its Wordle Date... A Wordle Date is the Wordle Puzzle ID Number that corresponds to a specific days.  In other words, it is the number of days before or after Wordle Morning, AKA Wordle #0, AKA June 19, 2021, AKA 0 WD.
+Wordle Date! Convert any date to its Wordle Date.  The Wordle Date is the number assigned to that day's Wordle Puzzle... which is the number of days before or after Wordle #0 (June 19, 2021), AKA Wordle Morning, AKA 0 WD.  Dates before 0 WD are represented by a negative number.
+
  
-It's clearly time to update to a mechanism upon which everyone can agree. Wordle Date. Days after 0 WD are positive integers aligining with the current Wordle puzzle number.  Days before 0 WD are representated with a negative integer. For example the first day of the old system (AD) would be 1/1/0000.  That same day in the Wordle-Date system is simply, -738325 WD. No more trying to make sense of why it goes mm/dd/yyyy in the US and dd/mm/yyyy in Europe.  No more trying to remember the names of months or if there is an extra "r" in Febuary or not.  Now, each day just gets a number. Its Wordle Puzzle Number.  So Simple. Each day after 0 WD aligns with the actual Wordle # that corresponds to said date.  Special thanks to The Creator, Josh Wardle, the New York Times, and of course Tracy Bennett. God bless you forever Ms. Bennett for your important, important work.
+Look, dating is hard. I mean, well, not that kind of dating, but sure, that kind of dating, too.  This package addresses dates as in the numbers that get assigned to specific chunks of time. I don't think anyone disagree with the fact that the AC/DC dating system is archaic and divisive, highly overrated, and dare I say, outdated?  It's clearly time to update to a date tracking mechanism upon which everyone can agree. Enter Wordle Date. Days after 0 WD are positive integers aligining with the current Wordle puzzle number.  Days before 0 WD are representated with a negative integer. 
+
+For example the first day of the old system (AD) would be 1/1/0000.  That same day in the Wordle-Date system is simply, -738325 WD. No more trying to make sense of why it goes mm/dd/yyyy in the US and dd/mm/yyyy in Europe.  No more trying to remember the names of months or if there is an extra "r" in Febuary or not.  Now, each day just gets a number. Its Wordle Puzzle Number.  So Simple. Each day after 0 WD aligns with the actual Wordle # that corresponds to said date.  
+
+Special thanks to The Creator, Josh Wardle, the New York Times, and of course Tracy Bennett. God bless you forever Ms. Bennett for your important, important work.
 
 Incidently, this package also contains a calculate function which can be used to calculate the number of days, hours, minutes, seconds, or other outputUnit (default is days) away from any set moment (default is Wordle #0 June 19, 2021), given any supplied moment. The elapsed time after the set moment will be represented as a positive number, while the elapsed time prior to the set moment will be represented as a negative number.
+
+Thank you for your installs, stars, pull requests, and love.  Together we can make this the most mildly popular dating program since Ben Awad's vsinder.
 
 ## Installation
 
@@ -14,6 +21,7 @@ npm install wordle-date
 ## Usage
 
 ### With import syntax (ECMAScript modules):
+note: scroll down for common JS 'Require' synatx.
 
 import { toWordleDate, calculate } from 'wordle-date';
 
