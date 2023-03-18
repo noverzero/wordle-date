@@ -22,7 +22,7 @@ function parseDate(date) {
   
   function calculate(referenceMoment = '2021-06-19T00:00:00Z', targetMoment = new Date(), outputUnit = 'days') {
     const ref = parseDate(referenceMoment);
-    const target = adjustForTimeZone(parseDate(targetMoment));
+    const target = adjustForTimezone(parseDate(targetMoment));
 
     let unitMultiplier;
   
