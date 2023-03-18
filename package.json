@@ -1,6 +1,6 @@
 {
   "name": "wordle-date",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Translate any date to its Wordle date... the number assigned to that day's Wordle Puzzle...the number of days before or after Wordle #0 (June 19, 2021), AKA Wordle Morning, AKA 0 WD. Why are we still using the divisive outdated archaic BC/AD system? It's clearly time to update to Wordle Date. For example, if we say that New Year's Day after Jesus' birth is 1/1/0000, then Jesus was born on -738325 WD.",
   "main": "index.js",
   "module": "index.mjs",
