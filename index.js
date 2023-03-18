@@ -13,7 +13,7 @@ function parseDate(date) {
   function toWordleDate(targetMoment = new Date()) {
     const referenceMoment = '2021-06-19T00:00:00Z'
     const ref = parseDate(referenceMoment);
-    const target = adjustForTimezone(parseDate(targetMoment));
+    const target = parseDate(adjustForTimezone(parseDate(targetMoment)));
 
     const elapsed = (target - ref) / (1000 * 60 * 60 * 24);
   
@@ -22,7 +22,7 @@ function parseDate(date) {
   
   function calculate(referenceMoment = '2021-06-19T00:00:00Z', targetMoment = new Date(), outputUnit = 'days') {
     const ref = parseDate(referenceMoment);
-    const target = adjustForTimezone(parseDate(targetMoment));
+    const target = parseDate(adjustForTimezone(parseDate(targetMoment)));
 
     let unitMultiplier;
   
