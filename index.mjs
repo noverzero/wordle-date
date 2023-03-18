@@ -11,7 +11,7 @@ function parseDate(date) {
   
     return elapsed * unitMultiplier;
   }
-  
+
   function calculate(referenceMoment = '2021-06-19T00:00:00Z', targetMoment = new Date().toISOString().split('T')[0], outputUnit = 'days') {
     const ref = parseDate(referenceMoment);
     const target = parseDate(targetMoment);
@@ -46,7 +46,7 @@ function parseDate(date) {
   }
   
 
-  module.exports = {
+  export {
     calculate,
     toWordleDate
   };
