@@ -1,8 +1,9 @@
 # wordle-date
 
+
+
 Wordle Date! Convert any date to its Wordle Date.  The Wordle Date is the number assigned to that day's Wordle Puzzle... which is the number of days before or after Wordle #0 (June 19, 2021), AKA Wordle Morning, AKA 0 WD.  Dates before 0 WD are represented by a negative number.
 
- 
 Look, dating is hard. I mean, well, not that kind of dating, but sure, that kind of dating, too.  This package addresses dates as in the numbers that get assigned to specific chunks of time. I don't think anyone disagree with the fact that the AC/DC dating system is archaic and divisive, highly overrated, and dare I say, outdated?  It's clearly time to update to a date tracking mechanism upon which everyone can agree. Enter Wordle Date. Days after 0 WD are positive integers aligining with the current Wordle puzzle number.  Days before 0 WD are representated with a negative integer. 
 
 For example the first day of the old system (AD) would be 1/1/0000.  That same day in the Wordle-Date system is simply, -738325 WD. No more trying to make sense of why it goes mm/dd/yyyy in the US and dd/mm/yyyy in Europe.  No more trying to remember the names of months or if there is an extra "r" in Febuary or not.  Now, each day just gets a number. Its Wordle Puzzle Number.  So Simple. Each day after 0 WD aligns with the actual Wordle # that corresponds to said date.  
@@ -12,6 +13,13 @@ Special thanks to The Creator, Josh Wardle, the New York Times, and of course Tr
 Incidently, this package also contains a calculate function which can be used to calculate the number of days, hours, minutes, seconds, or other outputUnit (default is days) away from any set moment (default is Wordle #0 June 19, 2021), given any supplied moment. The elapsed time after the set moment will be represented as a positive number, while the elapsed time prior to the set moment will be represented as a negative number.
 
 Thank you for your installs, stars, pull requests, and love.  Together we can make this the most mildly popular dating program since Ben Awad's vsinder.
+
+### Updates and Announcements
+Update: I now know that I don't need to run ```npm publish``` and issue a new version every time I update the README! Also, a few versions ago, I learned that I can test without publishing by using the ```npm link``` command. Sorry to anyone who discovered and installed this package shortly after its original publication and had to suffer through 8 versions of edits. I promise it will be a more pleasant developer experience moving forward.  With that said, here's a related announcement.
+
+Announcement: at 7:00PM Mountain Time on 640 WD, the great Nick Busey and I will be giving this package a good once over, LIVE on his Twitch stream, with an eye for publishing a new version that should last for a while.  Feel free to join with suggestions and comments.  We might add a function ```toWordleWord``, which will...you guessed it...convert any date to its Wordle Word.  Here's the <a href="https://www.twitch.tv/nickbusey/schedule" target="_blank">Link to the Live Stream schedule</a>
+
+
 
 ## Installation
 
@@ -29,7 +37,7 @@ import { toWordleDate, calculate } from 'wordle-date';
 
 //Basic conversion function takes a single argument of the target date (date you would like to see converted to its Wordle Date) and returns the Wordle Date.
 
-const wordleDate = toWordleDate('2022-03-17')
+const wd = toWordleDate('2022-03-17')
 console.log(`Target date as Wordle Date: ${wd}`);
 
 #### calculate(
